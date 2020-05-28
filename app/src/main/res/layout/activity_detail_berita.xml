@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".detail.DetailBeritaActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="270dp">
+
+            <ImageView
+                android:id="@+id/ivDetailImg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:autoSizeTextType="uniform"
+                android:background="@color/colorPrimary"
+                android:padding="10dp"
+                android:alpha="0.7"
+                android:textColor="@android:color/white"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tvTitleDetail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:autoSizeTextType="uniform"
+                android:padding="10dp"
+                android:text="Judul Detail"
+                android:textColor="@android:color/white"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            style="@style/TitleDetail"
+            android:drawableStart="@drawable/author"
+            android:text="Author    " />
+
+        <TextView
+            android:id="@+id/tvAuthorDetail"
+            style="@style/ContentDetail"
+            android:text="Penulis" />
+
+        <TextView
+            style="@style/TitleDetail2"
+            android:drawableStart="@drawable/description"
+            android:text="Description" />
+
+        <TextView
+            android:id="@+id/tvDescriptionDetail"
+            style="@style/ContentDetail2"
+            android:text="Description" />
+
+        <TextView
+            style="@style/TitleDetail"
+            android:drawableStart="@drawable/content"
+            android:text="Content" />
+
+        <TextView
+            android:id="@+id/tvContentDetail"
+            style="@style/ContentDetail"
+            android:text="Content" />
+
+        <TextView
+            style="@style/TitleDetail2"
+            android:drawableStart="@drawable/publishedat"
+            android:text="Published    " />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:drawableStart="@drawable/ic_date"
+                android:text="Date"
+                android:id="@+id/tvDateDetail"
+                style="@style/PublishedDetail"/>
+
+            <TextView
+                android:id="@+id/tvTimeDetail"
+                style="@style/PublishedDetail"
+                android:drawableStart="@drawable/ic_time"
+                android:text="Time"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+</ScrollView>
